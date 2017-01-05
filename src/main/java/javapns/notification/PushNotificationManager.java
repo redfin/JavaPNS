@@ -196,7 +196,7 @@ public class PushNotificationManager {
    * @throws CommunicationException thrown if a communication error occurs
    * @throws KeystoreException      thrown if there is a problem with your keystore
    */
-  private void initializePreviousConnection() throws CommunicationException, KeystoreException {
+  public void initializePreviousConnection() throws CommunicationException, KeystoreException {
     initializeConnection((AppleNotificationServer) this.connectionToAppleServer.getServer());
   }
 
